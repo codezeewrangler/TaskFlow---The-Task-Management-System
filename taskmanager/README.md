@@ -84,10 +84,3 @@ ls -l target/classes/application.properties || echo 'no properties in target/cla
 - If you want visual feedback on failed updates, open the browser console — fetch errors are logged there.
 
 ---
-
-If you'd like, I can also:
-- Add a startup check to `DBUtil` that logs whether credentials were loaded from properties or environment (without printing the password)
-- Add a short `CONTRIBUTING.md` or expand this README with screenshots
-- Help remove any secrets from git history if needed
-
-Which of those should I do next?
