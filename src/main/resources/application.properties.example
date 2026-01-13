@@ -1,0 +1,22 @@
+# Database configuration for TaskFlow
+# Copy this file to application.properties and fill in your values
+# DO NOT commit application.properties to version control!
+
+# JDBC Driver (auto-detected from URL if using DATABASE_URL)
+jdbc.driver=com.mysql.cj.jdbc.Driver
+
+# Database URL
+# For MySQL (local development):
+jdbc.url=jdbc:mysql://localhost:3306/task_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+
+# For PostgreSQL (Render/production):
+# jdbc.driver=org.postgresql.Driver
+# jdbc.url=jdbc:postgresql://localhost:5432/taskflow?sslmode=require
+
+# Database credentials
+jdbc.user=your_username
+jdbc.password=your_password
+
+# Note: For Render deployment, you don't need this file.
+# Set the DATABASE_URL environment variable instead (automatically provided by Render).
+# Format: postgres://username:password@hostname:port/database
